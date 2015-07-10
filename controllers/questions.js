@@ -1,6 +1,6 @@
-MessageBoard.Questions.Controller = Ember.ArrayController.extend({
+MessageBoard.QuestionsController = Ember.ArrayController.extend({
   actions: {
-    sortByTitle: function() {
+    sortByText: function() {
       this.set('sortProperties', ['text'])
     }
   }

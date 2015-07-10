@@ -3,12 +3,12 @@
 <form>
   <div class='form-group'>
     <label for='text'>Question</label>
-    {{textarea id='text' class='form-control' value=text}}
+    {{textarea value=text id='text' class='form-control'}}
   </div>
 
   <div class='form-group'>
     <label for='user_name'>User Name</label>
-    {{input id='user_name' class='form-control' rows='15' value=user_name}}
+    {{input value=user_name id='user_name' class='form-control' rows='15'}}
   </div>
-  <button class='btn btn-primary' {{action 'save'}}>Save</button>
+  <button class='btn' {{action 'save'}}>Save</button>
 </form>
