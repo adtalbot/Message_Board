@@ -1,0 +1,13 @@
+<div class='container'>
+  <h1>Message Board</h1>
+
+  <ul>
+    {{#each}}
+    <li>{{#link-to 'question' this.id}}{{text}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+
+  <p><a href='#' {{action 'sortbyTitle'}}>Sort by Question</a></p>
+
+  <p>{{#link-to 'new-question' classNames='btn btn-primary'}}New Question{{/link-to}}</p>
+</div>
